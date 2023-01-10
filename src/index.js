@@ -1,20 +1,17 @@
 import './style.css';
 
-const content = document.getElementById('content');
+const body = document.querySelector('body');
 const header = document.createElement('div')
 header.classList.add('header')
 const title = document.createElement('div')
-title.innerText = 'todo';
 title.classList.add('title')
 header.appendChild(title)
-
-
 const sidebar = document.createElement('div')
 sidebar.classList.add('sidebar')
-const main = document.createElement('div')
-main.classList.add('main')
+const content = document.createElement('div')
+content.classList.add('content')
 
 
-content.appendChild(header)
-content.appendChild(sidebar)
-content.appendChild(main)
+body.appendChild(header)
+body.appendChild(sidebar)
+body.appendChild(content)
